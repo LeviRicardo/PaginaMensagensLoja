@@ -1,10 +1,8 @@
 import * as S from './styles'
 
-function TextInput({name}) {
+function TextInput({name, valores}) {
     return(
-        <S.Wrapper>
-            <input placeholder={name}></input>
-        </S.Wrapper>
+        <S.Wrapper placeholder={name} onChange={valores}/>
     )
 }
 
