@@ -23,7 +23,7 @@ function App() {
       <TextInput name="Mensagem"/>
       <Botao />
       {
-        mensagens.map(elemento => <Card nome={elemento.email} mensagem={elemento.message} date={elemento.created_at}/>)
+        mensagens.map(elemento => <Card nome={elemento.email} mensagem={elemento.message} date={elemento.created_at} key={elemento.id}/>)
       }
       
       <CreateStyle />
